@@ -1,88 +1,53 @@
 <div id="Wrapper">
-  <div id="Header_wrapper">
-    <header id="Header">
-      <div id="Action_bar">
-        <div class="container">
-          <div class="column one">
-            <ul class="contact_details">
-              <li class="slogan">Have any questions?</li>              
-              <li class="phone"><i class="fa fa-phone"></i><a href="tel:+61383766284">+61 383 766 284</a></li>
-              <li class="mail"><i class="fa fa-envelope-o"></i><a href="mailto:noreply@envato.com">noreply@envato.com</a>
-              </li>
-            </ul>
-            <ul class="social">
-              <li class="facebook"><a href="#" title="Facebook"><i class="fa fa-facebook-f"></i></a></li>
-              <li class="googleplus"><a href="#" title="Google+"><i class="fa fa-google-plus"></i></a></li>
-              <li class="twitter"><a href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-              <li class="vimeo"><a href="#" title="Vimeo"><i class="fa fa-vimeo"></i></a></li>
-              <li class="youtube"><a href="#" title="YouTube"><i class="fa fa-play"></i></a></li>
-              <li class="flickr"><a href="#" title="Flickr"><i class="fa fa-flickr"></i></a></li>
-              <li class="linkedin"><a href="#" title="LinkedIn"><i class="fa fa-linkedin"></i></a></li>
-              <li class="pinterest"><a href="#" title="Pinterest"><i class="fa fa-pinterest"></i></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="header_placeholder" style="height: 0px;"></div>
-      <div id="Top_bar" class="" style="top: 61px;">
-        <div class="container">
-          <div class="column one">
-            <div class="top_bar_left clearfix" style="width: 1109px;">
-              <div class="logo">
-                <h1><a id="logo" href="https://themes.muffingroup.com/be/gym" title="BeGym - RAUJO" data-height="60"
-                      data-padding="15"><img class="logo-main scale-with-grid"
-                      src="https://themes.muffingroup.com/be/gym/wp-content/uploads/2015/04/gym.png"
-                      data-retina="https://themes.muffingroup.com/be/gym/wp-content/uploads/2015/04/retina-gym.png"
-                      data-height="35" alt="gym"><img class="logo-sticky scale-with-grid"
-                      src="https://themes.muffingroup.com/be/gym/wp-content/uploads/2015/04/gym.png"
-                      data-retina="https://themes.muffingroup.com/be/gym/wp-content/uploads/2015/04/retina-gym.png"
-                      data-height="35" alt="gym"><img class="logo-mobile scale-with-grid"
-                      src="https://themes.muffingroup.com/be/gym/wp-content/uploads/2015/04/gym.png"
-                      data-retina="https://themes.muffingroup.com/be/gym/wp-content/uploads/2015/04/retina-gym.png"
-                      data-height="35" alt="gym"><img class="logo-mobile-sticky scale-with-grid"
-                      src="https://themes.muffingroup.com/be/gym/wp-content/uploads/2015/04/gym.png"
-                      data-retina="https://themes.muffingroup.com/be/gym/wp-content/uploads/2015/04/retina-gym.png"
-                      data-height="35" alt="gym"></a></h1>
-              </div>
-              <div class="menu_wrapper">
-                <nav id="menu">
-                  <ul id="menu-main-menu" class="menu menu-main">
-                    <li id="menu-item-5"
-                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2 current_page_item">
-                      <a [routerLink]="[ '' ]"><span>Inicio</span></a></li>
-                    <li id="menu-item-38" class="menu-item menu-item-type-post_type menu-item-object-page"><a
-                        href="https://themes.muffingroup.com/be/gym/about-us/"><span>About us</span></a></li>
-                    <li id="menu-item-21" class="menu-item menu-item-type-post_type menu-item-object-page"><a
-                        href="https://themes.muffingroup.com/be/gym/what-we-offer/"><span>What we offer</span></a></li>
-                    <li id="menu-item-18" class="menu-item menu-item-type-post_type menu-item-object-page"><a
-                        href="https://themes.muffingroup.com/be/gym/personal-trainer/"><span>Personal trainer</span></a>
-                    </li>
-                    <li id="menu-item-32" class="menu-item menu-item-type-post_type menu-item-object-page last"><a
-                        href="https://themes.muffingroup.com/be/gym/contact/"><span>Contact</span></a></li>
-                    <li id="menu-item-41" class="menu-item menu-item-type-custom menu-item-object-custom last" ><a
-                       [routerLink]="[ '/login' ]"><span><span style="padding: 0; color: #D26BEB;">Login</span></span></a></li>
-                    <li id="menu-item-41" class="menu-item menu-item-type-custom menu-item-object-custom last"><a
-                       [routerLink]="[ '/register' ]"><span><span style="padding: 0; color: #D26BEB;">Register</span></span></a></li>   
-                  </ul>
-                </nav><a class="responsive-menu-toggle " href="#"><i class="icon-menu-fine"></i></a>
-              </div>
-              <div class="secondary_menu_wrapper"></div>
-              <div class="banner_wrapper"></div>
-              <div class="search_wrapper">
-                <form method="get" id="searchform" action="https://themes.muffingroup.com/be/gym/"> <i
-                    class="icon_search fa fa-search"></i> <a href="#" class="fa fa-times"><i
-                      class="fa fa-cancel"></i></a> <input type="text" class="field" name="s"
-                    placeholder="Enter your search"> <input type="submit" class="submit" value="" style="display:none;">
-                </form>
-              </div>
+    <div id="Header_wrapper">
+        <header id="Header">
+            <div id="Action_bar">
+                <app-header-navbar></app-header-navbar>
             </div>
-            <div class="top_bar_right">
-              <div class="top_bar_right_wrapper"><a id="search_button" href="#"><i class="fa fa-search"></i></a>
-              </div>
+            <div class="header_placeholder" style="height: 0px;"></div>
+            <div id="Top_bar" class="" style="top: 61px;">
+                <div class="container">
+                    <div class="column one">
+                        <div class="top_bar_left clearfix" style="width: 1109px;">
+                            <div class="logo">
+                                <h1>
+                                    <a id="logo" href="https://themes.muffingroup.com/be/gym" title="BeGym - RAUJO" data-height="60" data-padding="15"><img class="logo-main scale-with-grid" src="https://themes.muffingroup.com/be/gym/wp-content/uploads/2015/04/gym.png" data-retina="https://themes.muffingroup.com/be/gym/wp-content/uploads/2015/04/retina-gym.png" data-height="35"
+                                            alt="gym"><img class="logo-sticky scale-with-grid" src="https://themes.muffingroup.com/be/gym/wp-content/uploads/2015/04/gym.png" data-retina="https://themes.muffingroup.com/be/gym/wp-content/uploads/2015/04/retina-gym.png"
+                                            data-height="35" alt="gym"><img class="logo-mobile scale-with-grid" src="https://themes.muffingroup.com/be/gym/wp-content/uploads/2015/04/gym.png" data-retina="https://themes.muffingroup.com/be/gym/wp-content/uploads/2015/04/retina-gym.png"
+                                            data-height="35" alt="gym"><img class="logo-mobile-sticky scale-with-grid" src="https://themes.muffingroup.com/be/gym/wp-content/uploads/2015/04/gym.png" data-retina="https://themes.muffingroup.com/be/gym/wp-content/uploads/2015/04/retina-gym.png"
+                                            data-height="35" alt="gym"></a>
+                                </h1>
+                            </div>
+                            <div class="menu_wrapper">
+                                <nav id="menu">
+                                    <ul id="menu-main-menu" class="menu menu-main">
+                                        <li id="menu-item-5" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2 current_page_item">
+                                            <a [routerLink]="[ '' ]"><span>Inicio</span></a></li>
+                                        <li id="menu-item-38" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://themes.muffingroup.com/be/gym/about-us/"><span>About us</span></a></li>
+                                        <li id="menu-item-21" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://themes.muffingroup.com/be/gym/what-we-offer/"><span>What we offer</span></a></li>
+                                        <li id="menu-item-18" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://themes.muffingroup.com/be/gym/personal-trainer/"><span>Personal trainer</span></a>
+                                        </li>
+                                        <li id="menu-item-32" class="menu-item menu-item-type-post_type menu-item-object-page last"><a href="https://themes.muffingroup.com/be/gym/contact/"><span>Contact</span></a></li>
+                                        <li id="menu-item-41" class="menu-item menu-item-type-custom menu-item-object-custom last"><a [routerLink]="[ '/login' ]"><span><span style="padding: 0; color: #D26BEB;">Login</span></span></a></li>
+                                        <li id="menu-item-41" class="menu-item menu-item-type-custom menu-item-object-custom last"><a [routerLink]="[ '/register' ]"><span><span style="padding: 0; color: #D26BEB;">Register</span></span></a></li>
+                                    </ul>
+                                </nav><a class="responsive-menu-toggle " href="#"><i class="icon-menu-fine"></i></a>
+                            </div>
+                            <div class="secondary_menu_wrapper"></div>
+                            <div class="banner_wrapper"></div>
+                            <div class="search_wrapper">
+                                <form method="get" id="searchform" action="https://themes.muffingroup.com/be/gym/"> <i class="icon_search fa fa-search"></i> <a href="#" class="fa fa-times"><i
+                      class="fa fa-cancel"></i></a> <input type="text" class="field" name="s" placeholder="Enter your search"> <input type="submit" class="submit" value="" style="display:none;">
+                                </form>
+                            </div>
+                        </div>
+                        <div class="top_bar_right">
+                            <div class="top_bar_right_wrapper"><a id="search_button" href="#"><i class="fa fa-search"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </header>
-  </div> 
+        </header>
+    </div>
 </div>
