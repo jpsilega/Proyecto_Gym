@@ -3,8 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
     { path: 'home', loadChildren: () => import(`./modules/FeatureModules/home-module/home.module` ).then(m => m.HomeModule) },
-    /*{ path: 'login', component: LoginComponent },
-    { path: 'register', component: RegisterComponent },
+    { path: 'suplementos', loadChildren: () => import(`./modules/FeatureModules/suplementos-module/suplementos-module.module` ).then(m => m.SuplementosModuleModule) },
+    /*{ path: 'register', component: RegisterComponent },
     */{ path: '', redirectTo:'/home', pathMatch:'full' },
     { path: '**', redirectTo:'/home', pathMatch:'full' },
 
