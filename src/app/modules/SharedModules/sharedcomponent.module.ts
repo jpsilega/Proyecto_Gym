@@ -4,14 +4,17 @@ import { PlanPreciosComponent } from './plan-precios/plan-precios.component';
 import { NumbersNumbersComponent } from '../SharedModules/numbers-numbers/numbers-numbers.component';
 import { CheckoutPricingPlansComponent } from './checkout-pricing-plans/checkout-pricing-plans.component';
 import { GymNumberDashboardComponent } from './gym-number-dashboard/gym-number-dashboard.component';
+import { GymContactMessageDashboardComponent } from './gym-contact-message-dashboard/gym-contact-message-dashboard.component';
+import { GymContactUsComponent } from './gym-contact-us/gym-contact-us.component';
+import { GymOpenHourComponent } from './gym-open-hour/gym-open-hour.component';
 
 @NgModule({
   imports: [
     CommonModule
   ],
-  declarations: [PlanPreciosComponent, NumbersNumbersComponent, CheckoutPricingPlansComponent, GymNumberDashboardComponent],
+  declarations: [PlanPreciosComponent, NumbersNumbersComponent, CheckoutPricingPlansComponent, GymNumberDashboardComponent, GymContactMessageDashboardComponent, GymContactUsComponent, GymOpenHourComponent],
   exports: [
-    PlanPreciosComponent, NumbersNumbersComponent,CheckoutPricingPlansComponent,GymNumberDashboardComponent
+    PlanPreciosComponent, NumbersNumbersComponent,CheckoutPricingPlansComponent,GymNumberDashboardComponent,GymContactMessageDashboardComponent
   ]
 })
 export class SharedcomponentModule { }
