@@ -6,11 +6,12 @@ import { AppRoutingModule } from '../../../app-routing.module';
 import { FooterComponent } from './footer-component/footer.component';
 import { HeaderNavbarComponent } from './components/header-navbar/header-navbar.component';
 import { LogoGymComponent } from './components/logo-gym/logo-gym.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 
 
 @NgModule({
-  declarations: [HeaderComponent, FooterComponent, HeaderNavbarComponent, LogoGymComponent],
+  declarations: [HeaderComponent, FooterComponent, HeaderNavbarComponent, LogoGymComponent, NavbarComponent],
   imports: [
     CommonModule,
     FormsModule,

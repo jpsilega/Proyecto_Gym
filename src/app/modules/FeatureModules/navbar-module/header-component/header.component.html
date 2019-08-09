@@ -7,38 +7,7 @@
 
             <div id="Top_bar" class="" style="top: 61px;">
                 <div class="container">
-                    <div class="column one">
-                        <div class="top_bar_left clearfix" style="width: 1109px;">
-                            <app-logo-gym></app-logo-gym>
-
-                            <div class="menu_wrapper">
-                                <nav id="menu">
-                                    <ul id="menu-main-menu" class="menu menu-main">
-                                        <li id="menu-item-5" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2 current_page_item">
-                                            <a [routerLink]="[ '' ]"><span>Inicio</span></a></li>
-                                        <li id="menu-item-38" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://themes.muffingroup.com/be/gym/about-us/"><span>About us</span></a></li>
-                                        <li id="menu-item-21" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://themes.muffingroup.com/be/gym/what-we-offer/"><span>What we offer</span></a></li>
-                                        <li id="menu-item-18" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://themes.muffingroup.com/be/gym/personal-trainer/"><span>Personal trainer</span></a>
-                                        </li>
-                                        <li id="menu-item-32" class="menu-item menu-item-type-post_type menu-item-object-page last"><a href="https://themes.muffingroup.com/be/gym/contact/"><span>Contact</span></a></li>
-                                        <li id="menu-item-41" class="menu-item menu-item-type-custom menu-item-object-custom last"><a [routerLink]="[ '/login' ]"><span><span style="padding: 0; color: #D26BEB;">Login</span></span></a></li>
-                                        <li id="menu-item-41" class="menu-item menu-item-type-custom menu-item-object-custom last"><a [routerLink]="[ '/register' ]"><span><span style="padding: 0; color: #D26BEB;">Register</span></span></a></li>
-                                    </ul>
-                                </nav><a class="responsive-menu-toggle " href="#"><i class="icon-menu-fine"></i></a>
-                            </div>
-                            <div class="secondary_menu_wrapper"></div>
-                            <div class="banner_wrapper"></div>
-                            <div class="search_wrapper">
-                                <form method="get" id="searchform" action="https://themes.muffingroup.com/be/gym/"> <i class="icon_search fa fa-search"></i> <a href="#" class="fa fa-times"><i
-                      class="fa fa-cancel"></i></a> <input type="text" class="field" name="s" placeholder="Enter your search"> <input type="submit" class="submit" value="" style="display:none;">
-                                </form>
-                            </div>
-                        </div>
-                        <div class="top_bar_right">
-                            <div class="top_bar_right_wrapper"><a id="search_button" href="#"><i class="fa fa-search"></i></a>
-                            </div>
-                        </div>
-                    </div>
+                    <app-navbar></app-navbar>
                 </div>
             </div>
         </header>
