@@ -3,14 +3,14 @@
     <div class="container-clearfix" *ngFor="let suplemento of suplementosList">
         <div class="container-main-image">
 
-            <a href="http://transformer.blogs.quo.es/2018/12/14/toma-mas-cafe-para-perder-mas-grasa-corporal/">
+            <a [routerLink]="[suplemento.href]">
                 <img src={{suplemento.img}} alt="Toma más café para perder más grasa corporal" width="240" height="240">
             </a>
         </div>
         <div class="container-description">
-            <h2><a href="http://transformer.blogs.quo.es/2018/12/14/toma-mas-cafe-para-perder-mas-grasa-corporal/">{{suplemento.titulo}} </a></h2>
+            <h2><a [routerLink]="[suplemento.href]">{{suplemento.titulo}} </a></h2>
             <p>{{suplemento.msg}} </p>
-            <a href="http://transformer.blogs.quo.es/2018/12/14/toma-mas-cafe-para-perder-mas-grasa-corporal/" class="read-more"><span>Leer más</span></a>
+            <a [routerLink]="[suplemento.href]" class="read-more"><span>Ver</span></a>
         </div>
 
     </div>

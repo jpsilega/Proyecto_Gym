@@ -1,0 +1,18 @@
+<div class="row" style="    margin: 30px">
+    <div class="col-xs-10 col-sm-5 col-md-3" *ngFor="let item of productCreatinaList">
+        <div class="card product">
+            <a href="https://www.bulkpowders.es/creatina-monohidratada-creapure.html" data-scarabitem="undefined">
+                <img src="{{item.img}}" alt="Creatina Monohidratada Creapure®"></a>
+
+            <a class="view-product" href="https://www.bulkpowders.es/creatina-monohidratada-creapure.html">
+                <button>Ver producto</button>
+            </a>
+            <span>
+          <a href="https://www.bulkpowders.es/creatina-monohidratada-creapure.html">{{item.productName}}</a>
+        </span>
+            <span class="price">{{item.price}}
+        </span>
+
+        </div>
+    </div>
+</div>
