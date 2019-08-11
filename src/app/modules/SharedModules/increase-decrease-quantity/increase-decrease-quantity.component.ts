@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-increase-decrease-quantity',
@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IncreaseDecreaseQuantityComponent implements OnInit {
 
+  @Output() productCantityChangeEvent = new EventEmitter<number>();
   public productCant:number;
   constructor() {
     this.productCant=0;
@@ -17,12 +18,16 @@ export class IncreaseDecreaseQuantityComponent implements OnInit {
 
   increaseCantity():any{
     this.productCant+=1;
+    this.productCantityChangeEvent.emit(this.productCant);
 
   }
 
   decreaseCantity():any{
-    if(this.productCant>0)
-     this.productCant-=1;
+    if(this.productCant>0){
+      this.productCant-=1;
+      this.productCantityChangeEvent.emit(this.productCant);
+    }
+
   }
 
 }

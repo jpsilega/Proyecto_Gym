@@ -3,11 +3,30 @@
         <img src="../../../../../../assets/img/suplementos/creatina/creatian2.jpg" alt="Creatina Monohidratada Creapure®">
     </div>
     <div class="" style="padding: 40px; width: 50%;">
-        <h2>Creatkna</h2>
-        <span>10.55</span>
-        <span>7.55</span>
+        <h2>Creatina</h2>
+        <div>
+            <span>Precio del Producto</span>
+            <span>{{precio}}</span>
+        </div>
+        <div>
+            <span>Cantidad a Pagar con la compra</span>
+            <span>{{valorAPagar}}</span>
+        </div>
+        <div>
+            <span>Tamaño</span>
+            <span>200g</span>
+        </div>
+        <div>
+            <span>Tipo</span>
+            <span>Monohidratada</span>
+        </div>
+        <div>
+            <span>Sabor</span>
+            <span>Tropical</span>
+        </div>
+
         <div class="rd-quantity--container">
-            <app-increase-decrease-quantity></app-increase-decrease-quantity>
+            <app-increase-decrease-quantity (productCantityChangeEvent)="calcularCantidad($event)"></app-increase-decrease-quantity>
 
         </div>
         <!--Este boton es del ancho del div padre-->
