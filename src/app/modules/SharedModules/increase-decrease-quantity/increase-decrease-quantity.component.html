@@ -1,0 +1,19 @@
+<div class="col-sm-10">
+    <div style="text-align: center;width: 160px;margin-bottom: 10px;">
+        <span style="    font-weight: 600;
+      font-size: 18px;">Cantidad</span>
+    </div>
+    <div style="display: inline-flex;">
+        <input type="button" mdbBtn color="primary" (click)="decreaseCantity()" style="height: 52px" value="-">
+        <input readonly="" style="width: 100%;
+      border-width: 0;
+      font-size: 14px;
+      height: 48px;
+      text-align: center;
+      background: #fff;
+      max-width: 51px;
+      margin-right: 12px;
+      margin-left: 12px;" [(ngModel)]="productCant" class="qty--input align--center " min="1" type="number" name="qty" id="qty" maxlength="2" title="Cantidad">
+        <input type="button" mdbBtn color="primary" (click)="increaseCantity()" style="height: 52px" value="+">
+    </div>
+</div>
