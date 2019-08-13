@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
+import {MatExpansionModule} from '@angular/material/expansion';
 import { CreatinaRoutingModule } from './creatina-routing.module';
 import { CreatinaProductListComponent } from './componentes/creatina-product-list/creatina-product-list.component';
 import { CreatinaProductComponent } from './componentes/creatina-product/creatina-product.component';
@@ -13,6 +13,7 @@ import { SharedcomponentModule } from '../../SharedModules/sharedcomponent.modul
   imports: [
     CommonModule,
     SharedcomponentModule,
+    MatExpansionModule,
     CreatinaRoutingModule
   ]
 })

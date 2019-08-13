@@ -29,6 +29,9 @@
             <app-increase-decrease-quantity (productCantityChangeEvent)="calcularCantidad($event)"></app-increase-decrease-quantity>
 
         </div>
+        <div>
+            <app-instructions-product [usageMode]="uso"></app-instructions-product>
+        </div>
         <!--Este boton es del ancho del div padre-->
         <button type="button" class="btn btn-outline-secondary btn-lg btn-block">Comprar</button>
     </div>

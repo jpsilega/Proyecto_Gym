@@ -9,15 +9,18 @@ import { GymContactUsComponent } from './gym-contact-us/gym-contact-us.component
 import { GymOpenHourComponent } from './gym-open-hour/gym-open-hour.component';
 import { IncreaseDecreaseQuantityComponent } from './increase-decrease-quantity/increase-decrease-quantity.component';
 import { FormsModule } from '@angular/forms';
+import { InstructionsProductComponent } from './instructions-product/instructions-product.component';
+import { MaterialModule } from '../StyleModules/material-module/material.module';
 
 @NgModule({
   imports: [
     CommonModule,
+    MaterialModule,
     FormsModule
   ],
-  declarations: [PlanPreciosComponent, NumbersNumbersComponent, CheckoutPricingPlansComponent, GymNumberDashboardComponent, GymContactMessageDashboardComponent, GymContactUsComponent, GymOpenHourComponent, IncreaseDecreaseQuantityComponent],
+  declarations: [PlanPreciosComponent, NumbersNumbersComponent, CheckoutPricingPlansComponent, GymNumberDashboardComponent, GymContactMessageDashboardComponent, GymContactUsComponent, GymOpenHourComponent, IncreaseDecreaseQuantityComponent, InstructionsProductComponent],
   exports: [
-    PlanPreciosComponent, NumbersNumbersComponent,CheckoutPricingPlansComponent,GymNumberDashboardComponent,GymContactMessageDashboardComponent,IncreaseDecreaseQuantityComponent
+    PlanPreciosComponent, NumbersNumbersComponent,CheckoutPricingPlansComponent,GymNumberDashboardComponent,GymContactMessageDashboardComponent,IncreaseDecreaseQuantityComponent,InstructionsProductComponent
   ]
 })
 export class SharedcomponentModule { }
